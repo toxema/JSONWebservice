@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project SchemaVersion="2.42.138.0" ProjectRevision="114">
+  <Guid>38ca4117-cfc2-48b3-b602-d5f27020d5f3</Guid>
+  <ProjectFiles>
+    <ProjectFile Name="Project Files\tables\2210.lst" ModifiedDate="2019-05-23T00:09:14.9489594+03:00" Length="20299" />
+    <ProjectFile Name="Project Files\tables\2220.lst" ModifiedDate="2019-05-23T00:09:15.0933446+03:00" Length="20299" />
+    <ProjectFile Name="Project Files\tables\2230.lst" ModifiedDate="2019-05-23T00:09:15.2056432+03:00" Length="20299" />
+    <ProjectFile Name="Project Files\tables\2240.lst" ModifiedDate="2019-05-23T00:09:15.3259622+03:00" Length="20299" />
+    <ProjectFile Name="Project Files\tables\5210.lst" ModifiedDate="2019-05-23T00:09:15.534518+03:00" Length="28018" />
+    <ProjectFile Name="Project Files\tables\5220.lst" ModifiedDate="2019-05-23T00:09:15.714997+03:00" Length="28019" />
+    <ProjectFile Name="Project Files\tables\5230.lst" ModifiedDate="2019-05-23T00:09:15.8784311+03:00" Length="28018" />
+    <ProjectFile Name="Project Files\tables\5250.lst" ModifiedDate="2019-05-23T00:09:16.0990184+03:00" Length="28018" />
+    <ProjectFile Name="Project Files\tables\5260.lst" ModifiedDate="2019-05-23T00:09:16.4028257+03:00" Length="28018" />
+    <ProjectFile Name="Project Files\tables\5270.lst" ModifiedDate="2019-05-23T00:09:16.6815664+03:00" Length="28018" />
+    <ProjectFile Name="ProjectImages.neo" ModifiedDate="2019-05-22T12:30:46.9849141+03:00" Length="456" />
+    <ProjectFile Name="SntpClientRootComponent.neo" ModifiedDate="2019-05-22T12:30:42.8505304+03:00" Length="470" />
+    <ProjectFile Name="ProjectConfiguration.neo" ModifiedDate="2019-05-22T12:30:42.8895721+03:00" Length="6390" />
+    <ProjectFile Name="Security.neo" ModifiedDate="2019-05-22T12:30:42.9139712+03:00" Length="451" />
+    <ProjectFile Name="Security.xml" ModifiedDate="2019-05-22T12:30:42.9237557+03:00" Length="694" />
+    <ProjectFile Name="LicenseRootComponent.neo" ModifiedDate="2019-05-27T15:12:15.4278324+03:00" Length="17964" />
+    <ProjectFile Name="Expressions.neo" ModifiedDate="2019-05-22T12:30:42.9491064+03:00" Length="459" />
+    <ProjectFile Name="MultipleLanguages.neo" ModifiedDate="2019-05-27T17:21:03.1437398+03:00" Length="7386" />
+    <ProjectFile Name="Tags.neo" ModifiedDate="2019-05-27T17:16:36.745557+03:00" Length="11418" />
+    <ProjectFile Name="AlarmServer.neo" ModifiedDate="2019-05-22T12:30:43.2887571+03:00" Length="1056" />
+    <ProjectFile Name="Screen1.neoxaml" ModifiedDate="2019-05-28T09:09:35.9823901+03:00" Length="799" />
+    <ProjectFile Name="Screen1.Script.cs" ModifiedDate="2019-05-28T09:09:35.9823901+03:00" Length="782" />
+    <ProjectFile Name="Screen1.xaml" ModifiedDate="2019-05-28T09:09:36.0331179+03:00" Length="11615" />
+    <ProjectFile Name="Printer1.xml" ModifiedDate="2019-05-22T12:30:43.6869639+03:00" Length="850" />
+    <ProjectFile Name="Controller1.neo" ModifiedDate="2019-05-27T17:16:36.7865498+03:00" Length="1129" />
+    <ProjectFile Name="WebServer.neo" ModifiedDate="2019-05-27T17:22:46.4278798+03:00" Length="575" />
+    <ProjectFile Name="WebServer.Script.cs" ModifiedDate="2019-05-27T17:22:46.4298374+03:00" Length="3144" />
+    <ProjectFile Name="Rezonans.neo" ModifiedDate="2019-05-27T17:16:36.843155+03:00" Length="573" />
+    <ProjectFile Name="Rezonans.Script.cs" ModifiedDate="2019-05-27T17:16:36.8451077+03:00" Length="4869" />
+  </ProjectFiles>
+</Project>
