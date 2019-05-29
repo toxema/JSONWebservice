@@ -67,7 +67,8 @@ namespace Neo.ApplicationFramework.Generated
 					
 					Tank tank= new Tank(id,tank_name,table_no);
 					tank.table = getTable(table_no);
-				
+					tank.temperature=42.3f;
+					tank.pressure=3.43f;
 					tankList.Add(tank);
 					tankListesi+=tank.ToString()+"\r\n";
 					k++;
@@ -147,12 +148,12 @@ namespace Neo.ApplicationFramework.Generated
 		public	String name="tank1";
 		public	uint dip=0;
 		public	uint volume=0;
-		public	int pressure=0;
-		public	int temperature=0;
+		public	float pressure=0.0f;
+		public	float temperature=0.0f;
 		public 	int table_no=2210;
 		public List<Data> table=new List<Data>();
 	
-		public Tank(int id_,String name_,uint dip_,uint volume_,int pressure_,int temperature_){
+		public Tank(int id_,String name_,uint dip_,uint volume_,float pressure_,float temperature_){
 			this.id=id_;
 			this.name=name_;
 			this.dip=dip_;
@@ -185,12 +186,12 @@ namespace Neo.ApplicationFramework.Generated
 		}
 		public String toJSON(){
 			String json="{";
-				json+="\"id\":"+"\""+id+"\",";
+				json+="\"id\":"+""+id+",";
 				json+="\"name\":"+"\""+name+"\",";
-				json+="\"dip\":"+"\""+dip+"\",";
-				json+="\"volume\":"+"\""+volume+"\",";
-				json+="\"press\":"+"\""+pressure+"\",";
-				json+="\"temp\":"+"\""+temperature+"\"";
+				json+="\"dip\":"+""+dip+",";
+				json+="\"volume\":"+""+volume+",";
+				json+="\"press\":"+""+pressure+",";
+				json+="\"temp\":"+""+temperature+"";
 			json+="}";
 			return json;
 		}

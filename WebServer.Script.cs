@@ -74,16 +74,30 @@ namespace Neo.ApplicationFramework.Generated
 			StreamReader reader = new StreamReader(stream);
 			String text = "";
 			String data = "";
+			String request="";
 			while ((text = reader.ReadLine()) != null)
 			{
 				data += text + "\r\n";
+				if(text.IndexOf("GET")>-1){
+					request = text;
+				}
 				if (text == "") break;
 			}
 			Console.WriteLine(data);
 			StreamWriter writer = new StreamWriter(stream);
-			writer.WriteLine("HTTP/1.1 200 OK");
-			writer.WriteLine("Content-Type:application/json\r\n");
-			writer.WriteLine(WebServer.getJson());
+			if(request.IndexOf("getTanks")>-1){
+				writer.WriteLine("HTTP/1.1 200 OK");	
+				writer.WriteLine("Access-Control-Allow-Origin: * ");
+				writer.WriteLine("Content-Type:application/json\r\n");
+				writer.WriteLine(WebServer.getJson());
+			}else{
+				writer.WriteLine("HTTP/1.1 404 NOTFOUND");
+				writer.WriteLine("Access-Control-Allow-Origin: * ");
+				writer.WriteLine("Content-Type:application/json\r\n");
+				writer.WriteLine("[]");
+			}
+			
+			
 			writer.Flush();
 			writer.Close();
 		}

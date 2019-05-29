@@ -38,6 +38,10 @@ namespace Neo.ApplicationFramework.Generated {
         
         private Neo.ApplicationFramework.Controls.Controls.Label m_Text4;
         
+        private Neo.ApplicationFramework.Controls.Controls.AnalogNumeric m_AnalogNumeric3;
+        
+        private Neo.ApplicationFramework.Controls.Controls.AnalogNumeric m_AnalogNumeric4;
+        
         private bool m_Initialized_Screen1;
         
         public Screen1() {
@@ -100,6 +104,18 @@ namespace Neo.ApplicationFramework.Generated {
             }
         }
         
+        protected Neo.ApplicationFramework.Controls.Script.AnalogNumericCFAdapter AnalogNumeric3 {
+            get {
+                return this.AdapterService.CreateAdapter<Neo.ApplicationFramework.Controls.Script.AnalogNumericCFAdapter>(this.m_AnalogNumeric3);
+            }
+        }
+        
+        protected Neo.ApplicationFramework.Controls.Script.AnalogNumericCFAdapter AnalogNumeric4 {
+            get {
+                return this.AdapterService.CreateAdapter<Neo.ApplicationFramework.Controls.Script.AnalogNumericCFAdapter>(this.m_AnalogNumeric4);
+            }
+        }
+        
         private void InitializeComponent() {
             Neo.ApplicationFramework.Common.Dynamics.SymbolIntervalMapper symbolintervalmapper1 = new Neo.ApplicationFramework.Common.Dynamics.SymbolIntervalMapper();
             this.m_AnalogNumeric = new Neo.ApplicationFramework.Controls.Controls.AnalogNumeric();
@@ -111,6 +127,8 @@ namespace Neo.ApplicationFramework.Generated {
             this.m_Button = new Neo.ApplicationFramework.Controls.Controls.Button();
             this.m_Text3 = new Neo.ApplicationFramework.Controls.Controls.Label();
             this.m_Text4 = new Neo.ApplicationFramework.Controls.Controls.Label();
+            this.m_AnalogNumeric3 = new Neo.ApplicationFramework.Controls.Controls.AnalogNumeric();
+            this.m_AnalogNumeric4 = new Neo.ApplicationFramework.Controls.Controls.AnalogNumeric();
             ((System.ComponentModel.ISupportInitialize)(this.m_AnalogNumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_AnalogNumeric1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_Text)).BeginInit();
@@ -120,6 +138,8 @@ namespace Neo.ApplicationFramework.Generated {
             ((System.ComponentModel.ISupportInitialize)(this.m_Button)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_Text3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_Text4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_AnalogNumeric3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_AnalogNumeric4)).BeginInit();
             this.SuspendLayout();
             // 
             // Screen1
@@ -299,6 +319,44 @@ namespace Neo.ApplicationFramework.Generated {
             this.m_Text4.Top = 8;
             this.m_Text4.VisibleDynamicsValue = true;
             this.m_Text4.Width = 286;
+            // 
+            // m_AnalogNumeric3
+            // 
+            this.m_AnalogNumeric3.Background = new Neo.ApplicationFramework.Common.Graphics.Logic.BrushCF(System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255))))), System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(208)))), ((int)(((byte)(200))))), Neo.ApplicationFramework.Interfaces.FillDirection.VerticalBottomToTop);
+            this.m_AnalogNumeric3.BitmapEffect = new Neo.ApplicationFramework.Common.Graphics.Logic.BitmapEffectCF(2, 0, Neo.ApplicationFramework.Common.Graphics.Logic.LightAngle.LowerRight);
+            this.m_AnalogNumeric3.BlinkDynamicsValue = false;
+            this.m_AnalogNumeric3.BorderBrush = new Neo.ApplicationFramework.Common.Graphics.Logic.BrushCF(System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(157)))), ((int)(((byte)(185))))), System.Drawing.Color.Empty, Neo.ApplicationFramework.Interfaces.FillDirection.None);
+            this.m_AnalogNumeric3.BorderThickness = new Neo.ApplicationFramework.Common.Graphics.Logic.ThicknessCF(1D, 1D, 1D, 1D);
+            this.m_AnalogNumeric3.DelayMouseInputPeriod = 0;
+            this.m_AnalogNumeric3.EnabledDynamicsValue = true;
+            this.m_AnalogNumeric3.FontSizePixels = 20;
+            this.m_AnalogNumeric3.Height = 30;
+            this.m_AnalogNumeric3.Left = 105;
+            this.m_AnalogNumeric3.Name = "m_AnalogNumeric3";
+            this.m_AnalogNumeric3.Padding = new Neo.ApplicationFramework.Common.Graphics.Logic.ThicknessCF(2D, 2D, 2D, 2D);
+            this.m_AnalogNumeric3.ScreenOwnerName = "Screen1";
+            this.m_AnalogNumeric3.Top = 299;
+            this.m_AnalogNumeric3.VisibleDynamicsValue = true;
+            this.m_AnalogNumeric3.Width = 100;
+            // 
+            // m_AnalogNumeric4
+            // 
+            this.m_AnalogNumeric4.Background = new Neo.ApplicationFramework.Common.Graphics.Logic.BrushCF(System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255))))), System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(208)))), ((int)(((byte)(200))))), Neo.ApplicationFramework.Interfaces.FillDirection.VerticalBottomToTop);
+            this.m_AnalogNumeric4.BitmapEffect = new Neo.ApplicationFramework.Common.Graphics.Logic.BitmapEffectCF(2, 0, Neo.ApplicationFramework.Common.Graphics.Logic.LightAngle.LowerRight);
+            this.m_AnalogNumeric4.BlinkDynamicsValue = false;
+            this.m_AnalogNumeric4.BorderBrush = new Neo.ApplicationFramework.Common.Graphics.Logic.BrushCF(System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(157)))), ((int)(((byte)(185))))), System.Drawing.Color.Empty, Neo.ApplicationFramework.Interfaces.FillDirection.None);
+            this.m_AnalogNumeric4.BorderThickness = new Neo.ApplicationFramework.Common.Graphics.Logic.ThicknessCF(1D, 1D, 1D, 1D);
+            this.m_AnalogNumeric4.DelayMouseInputPeriod = 0;
+            this.m_AnalogNumeric4.EnabledDynamicsValue = true;
+            this.m_AnalogNumeric4.FontSizePixels = 20;
+            this.m_AnalogNumeric4.Height = 30;
+            this.m_AnalogNumeric4.Left = 105;
+            this.m_AnalogNumeric4.Name = "m_AnalogNumeric4";
+            this.m_AnalogNumeric4.Padding = new Neo.ApplicationFramework.Common.Graphics.Logic.ThicknessCF(2D, 2D, 2D, 2D);
+            this.m_AnalogNumeric4.ScreenOwnerName = "Screen1";
+            this.m_AnalogNumeric4.Top = 337;
+            this.m_AnalogNumeric4.VisibleDynamicsValue = true;
+            this.m_AnalogNumeric4.Width = 100;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.ClientSize = new System.Drawing.Size(800, 480);
             this.IsCacheable = true;
@@ -363,6 +421,8 @@ namespace Neo.ApplicationFramework.Generated {
             this.DrawingPrimitives.Add(this.m_Button);
             this.DrawingPrimitives.Add(this.m_Text3);
             this.DrawingPrimitives.Add(this.m_Text4);
+            this.DrawingPrimitives.Add(this.m_AnalogNumeric3);
+            this.DrawingPrimitives.Add(this.m_AnalogNumeric4);
             ((System.ComponentModel.ISupportInitialize)(this.m_AnalogNumeric)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_AnalogNumeric1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_Text)).EndInit();
@@ -372,6 +432,8 @@ namespace Neo.ApplicationFramework.Generated {
             ((System.ComponentModel.ISupportInitialize)(this.m_Button)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_Text3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_Text4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_AnalogNumeric3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_AnalogNumeric4)).EndInit();
         }
         
         private void m_Button_Action_Click(object sender, System.EventArgs e) {
@@ -429,6 +491,12 @@ namespace Neo.ApplicationFramework.Generated {
             Neo.ApplicationFramework.Common.Data.DynamicBinding dynamicBinding4 = new Neo.ApplicationFramework.Common.Data.DynamicBinding("Value", Neo.ApplicationFramework.Common.Data.DataItemProxyFactory.CreateProxy("Tags.tank_LISTESI"), "Value", true, System.Windows.Forms.DataSourceUpdateMode.Never, Neo.ApplicationFramework.Common.Dynamics.VariantValueConverterCF.Default);
             this.m_Text3.DataBindings.Add(dynamicBinding4);
             this.m_DynamicBindings.Add(dynamicBinding4);
+            Neo.ApplicationFramework.Common.Data.DynamicBinding dynamicBinding5 = new Neo.ApplicationFramework.Common.Data.DynamicBinding("Value", Neo.ApplicationFramework.Common.Data.DataItemProxyFactory.CreateProxy("Tags.BT"), "Value", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged, Neo.ApplicationFramework.Common.Dynamics.VariantValueConverterCF.Default);
+            this.m_AnalogNumeric3.DataBindings.Add(dynamicBinding5);
+            this.m_DynamicBindings.Add(dynamicBinding5);
+            Neo.ApplicationFramework.Common.Data.DynamicBinding dynamicBinding6 = new Neo.ApplicationFramework.Common.Data.DynamicBinding("Value", Neo.ApplicationFramework.Common.Data.DataItemProxyFactory.CreateProxy("Tags.ET"), "Value", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged, Neo.ApplicationFramework.Common.Dynamics.VariantValueConverterCF.Default);
+            this.m_AnalogNumeric4.DataBindings.Add(dynamicBinding6);
+            this.m_DynamicBindings.Add(dynamicBinding6);
         }
     }
 }

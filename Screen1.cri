@@ -33,6 +33,8 @@
         <Item Target="Screen1.Text3" TargetProperty="FontFamily" Source="LSIS_ENG.TTF" />
         <Item Target="Screen1.Button" TargetProperty="FontFamily" Source="LSIS_ENG.TTF" />
         <Item Target="Screen1.Text4" TargetProperty="FontFamily" Source="LSIS_ENG.TTF" />
+        <Item Target="Screen1.AnalogNumeric3" TargetProperty="FontFamily" Source="LSIS_ENG.TTF" />
+        <Item Target="Screen1.AnalogNumeric4" TargetProperty="FontFamily" Source="LSIS_ENG.TTF" />
       </Items>
     </Category>
     <Category Name="GlobalDataItem">
@@ -41,6 +43,8 @@
         <Item Target="Screen1.AnalogNumeric1" TargetProperty="Value" Source="Tags.dip_value" />
         <Item Target="Screen1.AnalogNumeric2" TargetProperty="Value" Source="Tags.calc_vol" />
         <Item Target="Screen1.Text3" TargetProperty="Value" Source="Tags.tank_LISTESI" />
+        <Item Target="Screen1.AnalogNumeric3" TargetProperty="Value" Source="Tags.BT" />
+        <Item Target="Screen1.AnalogNumeric4" TargetProperty="Value" Source="Tags.ET" />
       </Items>
     </Category>
     <Category Name="IntegratorSwapActiveProjectAction">
@@ -71,7 +75,7 @@
           <ScreenName>Screen1</ScreenName>
         </Item>
         <Item xsi:type="ScreenObjectsCrossReferenceItem">
-          <ObjectsCount>9</ObjectsCount>
+          <ObjectsCount>11</ObjectsCount>
           <ScreenName>Screen1</ScreenName>
         </Item>
       </Items>

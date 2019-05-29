@@ -16,6 +16,8 @@
     <Category Name="GlobalDataItem">
       <Items>
         <Item Target="Tags" TargetProperty="dip_value" Source="Controller1.DataItem1" />
+        <Item Target="Tags" TargetProperty="BT" Source="Controller1.DataItem2" />
+        <Item Target="Tags" TargetProperty="ET" Source="Controller1.DataItem3" />
       </Items>
     </Category>
     <Category Name="IntegratorSwapActiveProjectAction">

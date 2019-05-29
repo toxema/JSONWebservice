@@ -28,29 +28,13 @@ namespace Neo.ApplicationFramework.Generated
 		
 		public Neo.ApplicationFramework.Tools.OpcClient.LightweightTag tank_no;
 		
-		public Neo.ApplicationFramework.Tools.OpcClient.LightweightTag tank1_dip;
-		
-		public Neo.ApplicationFramework.Tools.OpcClient.LightweightTag tank1_volume;
-		
-		public Neo.ApplicationFramework.Tools.OpcClient.LightweightTag tank1_press;
-		
-		public Neo.ApplicationFramework.Tools.OpcClient.LightweightTag tank1_temp;
-		
-		public Neo.ApplicationFramework.Tools.OpcClient.LightweightTag tank1_calc;
-		
-		public Neo.ApplicationFramework.Tools.OpcClient.LightweightTag tank2_dip;
-		
-		public Neo.ApplicationFramework.Tools.OpcClient.LightweightTag tank2_volume;
-		
-		public Neo.ApplicationFramework.Tools.OpcClient.LightweightTag tank2_press;
-		
-		public Neo.ApplicationFramework.Tools.OpcClient.LightweightTag tank2_temp;
-		
-		public Neo.ApplicationFramework.Tools.OpcClient.LightweightTag tank2_calc;
-		
 		public Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem calc_vol;
 		
 		public Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem tank_LISTESI;
+		
+		public Neo.ApplicationFramework.Tools.OpcClient.LightweightTag BT;
+		
+		public Neo.ApplicationFramework.Tools.OpcClient.LightweightTag ET;
 		
 		public Neo.ApplicationFramework.Tools.OpcClient.PollGroup PollGroup1;
 		
@@ -95,18 +79,10 @@ namespace Neo.ApplicationFramework.Generated
 			this.temp = new Neo.ApplicationFramework.Tools.OpcClient.LightweightTag("temp", "", 500, ((Neo.ApplicationFramework.Interop.DataSource.BEDATATYPE)(Neo.ApplicationFramework.Interop.DataSource.BEDATATYPE.DT_DEFAULT)), false, "", null);
 			this.dip_value = new Neo.ApplicationFramework.Tools.OpcClient.LightweightTag("dip_value", "Controller1.DataItem1", 500, ((Neo.ApplicationFramework.Interop.DataSource.BEDATATYPE)(Neo.ApplicationFramework.Interop.DataSource.BEDATATYPE.DT_UINTEGER4)), false, "", null);
 			this.tank_no = new Neo.ApplicationFramework.Tools.OpcClient.LightweightTag("tank_no", "", 500, ((Neo.ApplicationFramework.Interop.DataSource.BEDATATYPE)(Neo.ApplicationFramework.Interop.DataSource.BEDATATYPE.DT_DEFAULT)), false, "", null);
-			this.tank1_dip = new Neo.ApplicationFramework.Tools.OpcClient.LightweightTag("tank1_dip", "", 500, ((Neo.ApplicationFramework.Interop.DataSource.BEDATATYPE)(Neo.ApplicationFramework.Interop.DataSource.BEDATATYPE.DT_UINTEGER2)), false, "", null);
-			this.tank1_volume = new Neo.ApplicationFramework.Tools.OpcClient.LightweightTag("tank1_volume", "", 500, ((Neo.ApplicationFramework.Interop.DataSource.BEDATATYPE)(Neo.ApplicationFramework.Interop.DataSource.BEDATATYPE.DT_UINTEGER2)), false, "", null);
-			this.tank1_press = new Neo.ApplicationFramework.Tools.OpcClient.LightweightTag("tank1_press", "", 500, ((Neo.ApplicationFramework.Interop.DataSource.BEDATATYPE)(Neo.ApplicationFramework.Interop.DataSource.BEDATATYPE.DT_UINTEGER2)), false, "", null);
-			this.tank1_temp = new Neo.ApplicationFramework.Tools.OpcClient.LightweightTag("tank1_temp", "", 500, ((Neo.ApplicationFramework.Interop.DataSource.BEDATATYPE)(Neo.ApplicationFramework.Interop.DataSource.BEDATATYPE.DT_UINTEGER2)), false, "", null);
-			this.tank1_calc = new Neo.ApplicationFramework.Tools.OpcClient.LightweightTag("tank1_calc", "", 500, ((Neo.ApplicationFramework.Interop.DataSource.BEDATATYPE)(Neo.ApplicationFramework.Interop.DataSource.BEDATATYPE.DT_UINTEGER2)), false, "", null);
-			this.tank2_dip = new Neo.ApplicationFramework.Tools.OpcClient.LightweightTag("tank2_dip", "", 500, ((Neo.ApplicationFramework.Interop.DataSource.BEDATATYPE)(Neo.ApplicationFramework.Interop.DataSource.BEDATATYPE.DT_DEFAULT)), false, "", null);
-			this.tank2_volume = new Neo.ApplicationFramework.Tools.OpcClient.LightweightTag("tank2_volume", "", 500, ((Neo.ApplicationFramework.Interop.DataSource.BEDATATYPE)(Neo.ApplicationFramework.Interop.DataSource.BEDATATYPE.DT_DEFAULT)), false, "", null);
-			this.tank2_press = new Neo.ApplicationFramework.Tools.OpcClient.LightweightTag("tank2_press", "", 500, ((Neo.ApplicationFramework.Interop.DataSource.BEDATATYPE)(Neo.ApplicationFramework.Interop.DataSource.BEDATATYPE.DT_DEFAULT)), false, "", null);
-			this.tank2_temp = new Neo.ApplicationFramework.Tools.OpcClient.LightweightTag("tank2_temp", "", 500, ((Neo.ApplicationFramework.Interop.DataSource.BEDATATYPE)(Neo.ApplicationFramework.Interop.DataSource.BEDATATYPE.DT_DEFAULT)), false, "", null);
-			this.tank2_calc = new Neo.ApplicationFramework.Tools.OpcClient.LightweightTag("tank2_calc", "", 500, ((Neo.ApplicationFramework.Interop.DataSource.BEDATATYPE)(Neo.ApplicationFramework.Interop.DataSource.BEDATATYPE.DT_DEFAULT)), false, "", null);
 			this.calc_vol = new Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem("calc_vol", ((Neo.ApplicationFramework.Interop.DataSource.BEDATATYPE)(Neo.ApplicationFramework.Interop.DataSource.BEDATATYPE.DT_DEFAULT)), ((short)(1)), 0D, 1D, ((short)(0)), false, "Value Change", ((Core.Api.DataSource.AccessRights)((Core.Api.DataSource.AccessRights.Read | Core.Api.DataSource.AccessRights.Write))), "PollGroup1", false, false, ((Neo.ApplicationFramework.Interop.DataSource.BEDATATYPE)(Neo.ApplicationFramework.Interop.DataSource.BEDATATYPE.DT_UINTEGER4)), "", ((short)(1)), "", "");
 			this.tank_LISTESI = new Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem("tank_LISTESI", ((Neo.ApplicationFramework.Interop.DataSource.BEDATATYPE)(Neo.ApplicationFramework.Interop.DataSource.BEDATATYPE.DT_DEFAULT)), ((short)(1)), 0D, 1D, ((short)(0)), false, "Value Change", ((Core.Api.DataSource.AccessRights)((Core.Api.DataSource.AccessRights.Read | Core.Api.DataSource.AccessRights.Write))), "PollGroup1", false, false, ((Neo.ApplicationFramework.Interop.DataSource.BEDATATYPE)(Neo.ApplicationFramework.Interop.DataSource.BEDATATYPE.DT_STRING)), "", ((short)(1)), "", "");
+			this.BT = new Neo.ApplicationFramework.Tools.OpcClient.LightweightTag("BT", "Controller1.DataItem2", 500, ((Neo.ApplicationFramework.Interop.DataSource.BEDATATYPE)(Neo.ApplicationFramework.Interop.DataSource.BEDATATYPE.DT_INTEGER2)), false, "", null);
+			this.ET = new Neo.ApplicationFramework.Tools.OpcClient.LightweightTag("ET", "Controller1.DataItem3", 500, ((Neo.ApplicationFramework.Interop.DataSource.BEDATATYPE)(Neo.ApplicationFramework.Interop.DataSource.BEDATATYPE.DT_INTEGER2)), false, "", null);
 			this.PollGroup1 = new Neo.ApplicationFramework.Tools.OpcClient.PollGroup();
 			this.PollGroup2 = new Neo.ApplicationFramework.Tools.OpcClient.PollGroup();
 			this.PollGroup3 = new Neo.ApplicationFramework.Tools.OpcClient.PollGroup();
@@ -134,18 +110,10 @@ namespace Neo.ApplicationFramework.Generated
 			this.LightweightTags.Add(this.temp);
 			this.LightweightTags.Add(this.dip_value);
 			this.LightweightTags.Add(this.tank_no);
-			this.LightweightTags.Add(this.tank1_dip);
-			this.LightweightTags.Add(this.tank1_volume);
-			this.LightweightTags.Add(this.tank1_press);
-			this.LightweightTags.Add(this.tank1_temp);
-			this.LightweightTags.Add(this.tank1_calc);
-			this.LightweightTags.Add(this.tank2_dip);
-			this.LightweightTags.Add(this.tank2_volume);
-			this.LightweightTags.Add(this.tank2_press);
-			this.LightweightTags.Add(this.tank2_temp);
-			this.LightweightTags.Add(this.tank2_calc);
 			this.GlobalDataItems.Add(this.calc_vol);
 			this.GlobalDataItems.Add(this.tank_LISTESI);
+			this.LightweightTags.Add(this.BT);
+			this.LightweightTags.Add(this.ET);
 			this.PollGroup1.Interval = 500;
 			this.PollGroup1.Name = "PollGroup1";
 			this.PollGroup2.Interval = 500;
