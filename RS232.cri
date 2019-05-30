@@ -14,10 +14,7 @@
       <Items />
     </Category>
     <Category Name="GlobalDataItem">
-      <Items>
-        <Item Target="Tags" TargetProperty="BT" Source="Controller1.DataItem2" />
-        <Item Target="Tags" TargetProperty="ET" Source="Controller1.DataItem3" />
-      </Items>
+      <Items />
     </Category>
     <Category Name="IntegratorSwapActiveProjectAction">
       <Items />
@@ -35,7 +32,9 @@
       <Items />
     </Category>
     <Category Name="Script">
-      <Items />
+      <Items>
+        <Item Target="RS232.Script.cs" Source="Tags.CONNECTION_PORT_STATUS" />
+      </Items>
     </Category>
     <Category Name="StructuredTag">
       <Items />

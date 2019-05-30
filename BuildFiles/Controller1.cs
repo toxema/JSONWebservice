@@ -16,8 +16,6 @@ namespace Neo.ApplicationFramework.Generated
 	public partial class Controller1 : Neo.ApplicationFramework.Tools.OpcClient.DataSourceContainer, Neo.ApplicationFramework.Interfaces.ISupportMultiLanguage
 	{
 		
-		private Neo.ApplicationFramework.Tools.OpcClient.DataItem DataItem1;
-		
 		private Neo.ApplicationFramework.Tools.OpcClient.DataItem DataItem2;
 		
 		private Neo.ApplicationFramework.Tools.OpcClient.DataItem DataItem3;
@@ -49,7 +47,6 @@ namespace Neo.ApplicationFramework.Generated
 		
 		private void InitializeObjectCreations()
 		{
-			this.DataItem1 = new Neo.ApplicationFramework.Tools.OpcClient.DataItem("DataItem1", "", ((Neo.ApplicationFramework.Interop.DataSource.BEDATATYPE)(Neo.ApplicationFramework.Interop.DataSource.BEDATATYPE.DT_INTEGER2)), ((short)(1)), 0D, 1D, ((short)(0)), false);
 			this.DataItem2 = new Neo.ApplicationFramework.Tools.OpcClient.DataItem("DataItem2", "40001", ((Neo.ApplicationFramework.Interop.DataSource.BEDATATYPE)(Neo.ApplicationFramework.Interop.DataSource.BEDATATYPE.DT_INTEGER2)), ((short)(1)), 0D, 1D, ((short)(0)), false);
 			this.DataItem3 = new Neo.ApplicationFramework.Tools.OpcClient.DataItem("DataItem3", "40002", ((Neo.ApplicationFramework.Interop.DataSource.BEDATATYPE)(Neo.ApplicationFramework.Interop.DataSource.BEDATATYPE.DT_INTEGER2)), ((short)(1)), 0D, 1D, ((short)(0)), false);
 		}
@@ -57,14 +54,12 @@ namespace Neo.ApplicationFramework.Generated
 		private void InitializeBeginInits()
 		{
 			((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.DataItem1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.DataItem2)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.DataItem3)).BeginInit();
 		}
 		
 		private void InitializeEndInits()
 		{
-			((System.ComponentModel.ISupportInitialize)(this.DataItem1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.DataItem2)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.DataItem3)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this)).EndInit();
@@ -72,8 +67,6 @@ namespace Neo.ApplicationFramework.Generated
 		
 		private void InitializeObjects()
 		{
-			this.DataItem1.Active = Neo.ApplicationFramework.Interop.DataSource.BEACTIVETYPE.ACTIVE_FALSE;
-			this.DataItems.Add(this.DataItem1);
 			this.DataItems.Add(this.DataItem2);
 			this.DataItems.Add(this.DataItem3);
 			this.Driver = "Modicon_Modbus_RTU_ASCII_Pre2.Modicon_Modbus_RTU_ASCII_Pre2.1";

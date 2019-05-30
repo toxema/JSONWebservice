@@ -33,8 +33,8 @@
     </Category>
     <Category Name="Script">
       <Items>
-        <Item Target="Rezonans.Script.cs" Source="Tags.tank_LISTESI" />
         <Item Target="Rezonans.Script.cs" Source="Tags.calc_vol" />
+        <Item Target="Rezonans.Script.cs" Source="Tags.tank_LISTESI" />
       </Items>
     </Category>
     <Category Name="StructuredTag">

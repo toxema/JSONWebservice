@@ -15,7 +15,6 @@ namespace Neo.ApplicationFramework.Generated
     public partial class Rezonans
     {	
 		String dizin="\\FlashDrive\\Project\\Project Files\\tables\\";
-	//	String	dizin="c:\\data\\tables\\";
 		
 		private	List<Tank> tankList=new List<Tank>();
 		
@@ -23,6 +22,27 @@ namespace Neo.ApplicationFramework.Generated
 		void Rezonans_Created(System.Object sender, System.EventArgs e)
 		{ 
 			initTanks();
+		}
+		
+		// serial porttan gelen data burada işlenecek
+		public void onData(string table_no,uint dip,float press,float temp){
+			Tank tank=getTank(table_no);
+			tank.dip=dip;
+			tank.pressure=press;
+			tank.temperature=temp;
+			tank.volume=(uint)hesapla(tank.dip,tank.table);
+		}
+
+		public Tank getTank(String table_no){
+			Tank tank = new Tank();
+			for(int k = 0;k<tankList.Count;k++){
+				Tank t=tankList[k];
+				if(t.table_no == table_no){
+					tank=t;
+					break;
+				}
+			}
+			return tank;
 		}
 		
 		//sistemdeki tank Listesini döndürür
@@ -48,6 +68,25 @@ namespace Neo.ApplicationFramework.Generated
 			
 		}
 		
+		// Tank Nesnesi Kullanılmadan Hesap Yapmaya Yarar
+		// diğer Hesapla fonksioyuyla görevi aynıdır
+		public double hesapla(uint dip,List<Data> tablo){
+			double val=-1;
+			
+			Data prev=new Data(0,0);
+			for(int k=0;k<tablo.Count;k++){
+				Data d=tablo[k];
+				if(dip<d.dip){
+					val=(((d.hacim - prev.hacim) * (dip - prev.dip)) / (d.dip - prev.dip)) + prev.hacim;
+					break;
+				}	
+				prev=d;
+			}
+			
+			Globals.Tags.calc_vol.Value = val;
+		//	MessageBox.Show("deger:"+val);
+			return val;
+		}
 		// Tank Tanım tabloları okunarak Her Tablo için bir Tank Nesnesi Yaratılır
 		// Ve oluşan tank nesneleri Tank Listesine Eklenir
 		public void initTanks(){
@@ -79,25 +118,7 @@ namespace Neo.ApplicationFramework.Generated
 
 		}
 		
-		// Tank Nesnesi Kullanılmadan Hesap Yapmaya Yarar
-		// diğer Hesapla fonksioyuyla görevi aynıdır
-		public double hesapla(uint dip,List<Data> tablo){
-			double val=-1;
-			
-			Data prev=new Data(0,0);
-			for(int k=0;k<tablo.Count;k++){
-				Data d=tablo[k];
-				if(dip<d.dip){
-					val=(((d.hacim - prev.hacim) * (dip - prev.dip)) / (d.dip - prev.dip)) + prev.hacim;
-					break;
-				}	
-				prev=d;
-			}
-			
-			Globals.Tags.calc_vol.Value = val;
-		//	MessageBox.Show("deger:"+val);
-			return val;
-		}		
+		
 		
 		//Ana dizindeki Tank Dosyasını okuyarak 
 		// Tank Tablosu oluşturur ve Liste olarak geri döndürür
